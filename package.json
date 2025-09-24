@@ -49,6 +49,7 @@
     "vite-imagetools": "^7.1.0"
   },
   "dependencies": {
+    "@simpreact/simpreact": "^0.0.5",
     "motion": "^12.23.2",
     "react": "^19.1.0",
     "react-corsair": "^0.0.10",

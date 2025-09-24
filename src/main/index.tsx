@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './App.js';
 
@@ -7,11 +7,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 import('./index.css').then(() => {
-  createRoot(document.body).render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
+  createRoot(document.body).render(<App />);
 });
 
 function disableReactDevTools(): void {

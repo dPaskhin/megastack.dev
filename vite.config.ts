@@ -11,6 +11,7 @@ export default defineConfig(env => {
   const isDev = env.mode === 'development';
 
   return {
+    base: '',
     root: './src/main',
     build: {
       minify: isDev ? false : 'esbuild',
@@ -58,6 +59,10 @@ export default defineConfig(env => {
     },
     resolve: {
       preserveSymlinks: true,
+      alias: {
+        react: '@simpreact/simpreact/compat',
+        'react-dom': '@simpreact/simpreact/compat',
+      },
     },
     plugins: [
       imagetools(),
